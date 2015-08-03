@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
+using System.Web.Routing;
 
 namespace COMP2007_FinalAssignment
 {
@@ -11,6 +12,7 @@ namespace COMP2007_FinalAssignment
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }
 }
